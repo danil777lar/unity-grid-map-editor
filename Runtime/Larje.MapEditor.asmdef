@@ -1,0 +1,16 @@
+{
+    "name": "Larje.MapEditor",
+    "rootNamespace": "Larje.MapEditor",
+    "references": [
+        "Larje.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
