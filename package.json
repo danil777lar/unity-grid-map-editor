@@ -2,7 +2,7 @@
   "name": "com.larje.mapeditor",
   "version": "0.1.0",
   "displayName": "Larje Map Editor",
-  "description": "Grid-based level map editor: paint surface, wall and prefab tile layers in the Scene view and bake them into meshes with colliders. Includes a programmatic paint API and Unity AI MCP tools to describe and paint maps.",
+  "description": "Grid-based level map editor: paint surface, wall and prefab tile layers in the Scene view and bake them into meshes with colliders. Includes a programmatic paint API and Unity CLI commands to describe and paint maps.",
   "unity": "6000.3",
   "author": {
     "name": "Danil Kolbasenko",

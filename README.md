@@ -38,9 +38,11 @@ map.Build();
 
 Surface and tile layers store unit cells `(x,y)->(x+1,y+1)`. Wall layers store unit edges between grid points, and an edge equals its reverse.
 
-## Unity AI (MCP) tools
+## Unity CLI commands
 
-| Tool | Purpose |
+With `com.unity.pipeline` in the project, a running editor exposes these commands to the [Unity CLI](https://docs.unity.com/en-us/unity-cli) (`unity command <group> <name>`):
+
+| Command | Purpose |
 |---|---|
-| `Larje.DescribeMap` | Describe a map in the open scenes: layers, types, bounds, tiles, child maps |
-| `Larje.PaintMap` | Apply `rect` / `cells` / `line` / `tiles` / `clear` operations (each can set `erase: true`), create the layer if needed and optionally build (undo-able) |
+| `larje.map describe [--target --skip_tiles]` | Describe a map in the open scenes: layers, types, bounds, tiles, child maps |
+| `larje.map paint --layer <name> (--ops '<json array>' \| --file <ops.json>) [--create_as --build --target]` | Apply `rect` / `cells` / `line` / `tiles` / `clear` operations (each can set `erase: true`), create the layer if needed and optionally build (undo-able). Save the scene afterwards with `unity command scene save` |
